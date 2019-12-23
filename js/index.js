@@ -73,11 +73,12 @@ function addMeshToList(mesh) {
   const listItem = document.createElement('li');
   const span = document.createElement('span');
   const itemBtn = document.createElement('button');
+
   itemBtn.type = 'button';
   itemBtn.dataset.uuid = mesh.uuid;
+  itemBtn.innerHTML = 'X';
 
   span.innerHTML = mesh.uuid;
-  itemBtn.innerHTML = 'X';
 
   listItem.appendChild(span);
   listItem.appendChild(itemBtn);
