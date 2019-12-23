@@ -9,12 +9,14 @@ const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(45, canvas.offsetWidth / canvas.offsetHeight, 0.1, 1000);
 const light = new THREE.AmbientLight(0xffffff);
 const material = new THREE.MeshBasicMaterial({ color: 0xffffff, vertexColors: THREE.FaceColors });
+const controls = new THREE.OrbitControls(camera, canvas);
 
 let figures = [];
 
 renderer.setClearColor(0x000000);
 camera.position.set(0, 0, 40);
 scene.add(light);
+controls.update();
 update();
 
 document.getElementById('create').addEventListener('click', createFigureHandler);
@@ -101,5 +103,7 @@ function removeFigureHandler(event) {
 // update all changes
 function update() {
   requestAnimationFrame(update);
+
+  controls.update();
   renderer.render(scene, camera);
 }
