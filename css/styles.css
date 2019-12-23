@@ -28,3 +28,32 @@ body {
   width: 100%;
   margin: 0 5px;
 }
+
+.canvas {
+  width: 100%;
+  min-height: 600px;
+  max-height: 780px;
+}
+
+.footer {
+  max-height: 250px;
+  overflow-y: scroll;
+}
+
+.figures-list {
+  max-width: 400px;
+  margin: 20px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.figures-list li {
+  display: flex;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.figures-list li button {
+  margin-left: auto;
+}
