@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Figures with three.js</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="create-controls">
+        <select  id="select" class="controls figure-list" name="select">
+          <option value="cube" selected>Куб</option>
+          <option value="piramid">Пирамида</option>
+          <option value="sphere">Сфера</option>
+        </select>
+        <div class="range-block">
+
+          1<input id="scale" class="controls figure-scale" type="range" min="1" max="10" step="1" value="5" />10
+        </div>
+        <button id="create" class="controls figure-create type="button">Создать</button>
+      </div>
+    </div>
+
+    <canvas id="canvas" class="canvas"></canvas>
+
+    <div class="figures-list"></div>
+
+    <script src="js/three.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

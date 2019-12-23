@@ -1,0 +1,30 @@
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+}
+
+.header {
+  background-color: #33b5e5;
+}
+
+.create-controls {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.range-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.range-block input {
+  width: 100%;
+  margin: 0 5px;
+}
